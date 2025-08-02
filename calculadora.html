@@ -1,0 +1,71 @@
+<!-- Objetivo: 
+El estudiante deberá desarrollar una calculadora básica con una interfaz en HTML y funcionalidad en JavaScript. La calculadora debe permitir realizar operaciones de suma y resta mediante botones, utilizando `addEventListener` para manejar los eventos de clic. 
+ 
+Requisitos mínimos: 
+Crear un archivo `calculadora.html`. 
+Incluir dos campos numéricos para ingresar los valores. 
+Agregar dos botones: uno para sumar y otro para restar. 
+Usar `addEventListener` para detectar los clics y ejecutar las operaciones. 
+Mostrar el resultado en un elemento HTML. 
+Ejemplo básico de estructura: 
+```html 
+<input type="number" id="num1"> 
+<input type="number" id="num2"> 
+<button id="sumar">Sumar</button> 
+<button id="restar">Restar</button> 
+<p id="resultado"></p> 
+ 
+<script> 
+document.getElementById("sumar").addEventListener("click", function() { 
+  let n1 = parseFloat(document.getElementById("num1").value); 
+  let n2 = parseFloat(document.getElementById("num2").value); 
+  document.getElementById("resultado").innerText = n1 + n2; 
+}); 
+document.getElementById("restar").addEventListener("click", function() { 
+  let n1 = parseFloat(document.getElementById("num1").value); 
+  let n2 = parseFloat(document.getElementById("num2").value); 
+  document.getElementById("resultado").innerText = n1 - n2; 
+}); 
+</script> 
+
+Entregable:
+El estudiante deberá entregar una captura de pantalla mostrando la calculadora en funcionamiento o un breve reporte con el código y una descripción de su ejecución. El archivo deberá ser subido a la plataforma como evidencia del mini desafío completado.  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora</title>
+</head>
+<body>
+  <h1>Calculadora Básica</h1>
+  <p>Ingrese dos números para realizar operaciones:</p>
+<input type="number" id="num1"> 
+<input type="number" id="num2"> 
+<button id="sumar">Sumar</button> 
+<button id="restar">Restar</button> 
+<button id="multiplicar">Multiplicar</button>
+<button id="dividir">Dividir</button>
+<p id="resultado"></p> 
+ 
+<script> 
+document.getElementById("sumar").addEventListener("click", function() { 
+  let n1 = parseFloat(document.getElementById("num1").value); 
+  let n2 = parseFloat(document.getElementById("num2").value); 
+  document.getElementById("resultado").innerText = n1 + n2; 
+}); 
+document.getElementById("restar").addEventListener("click", function() { 
+  let n1 = parseFloat(document.getElementById("num1").value); 
+  let n2 = parseFloat(document.getElementById("num2").value); 
+  document.getElementById("resultado").innerText = n1 - n2; 
+}); 
+document.getElementById("multiplicar").addEventListener("click", function() { 
+  let n1 = parseFloat(document.getElementById("num1").value); 
+  let n2 = parseFloat(document.getElementById("num2").value); 
+  document.getElementById("resultado").innerText = n1 * n2; 
+}); 
+document.getElementById("dividir").addEventListener("click", function() { 
+  let n1 = parseFloat(document.getElementById("num1").value); 
+  let n2 = parseFloat(document.getElementById("num2").value); 
+  document.getElementById("resultado").innerText = n1 / n2; 
+});
+</script> 

@@ -1,0 +1,51 @@
+<!-- Objetivo: 
+En esta tarea el estudiante desarrollará una página HTML básica con un botón que, al hacer clic, cambie el contenido del texto o el color de un elemento en la página. Esto permitirá practicar la vinculación entre HTML y JavaScript para generar interacciones simples. 
+ 
+Requisitos: 
+Crear un archivo llamado `boton_interactivo.html`. 
+Incluir un botón con un `id` único. 
+Agregar un elemento HTML que se verá afectado por el clic (puede ser un párrafo o un `div`). 
+Escribir una función JavaScript que se active con el evento `onclick`. 
+La función debe cambiar el texto o color del elemento seleccionado. 
+ 
+Ejemplo básico de código: 
+```html 
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Botón Interactivo</title> 
+</head> 
+<body> 
+  <p id="mensaje">Texto original</p> 
+  <button onclick="cambiarTexto()">Haz clic aquí</button> 
+ 
+  <script> 
+    function cambiarTexto() { 
+      document.getElementById("mensaje").innerHTML = "Texto modificado"; 
+    } 
+  </script> 
+</body> 
+</html> 
+
+Entregable:
+El estudiante deberá crear y ejecutar la página HTML, y verificar que el botón cambia el texto o el color correctamente. No es necesario entregar el archivo, solo realizar la práctica y comprobar su funcionamiento. -->
+
+html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Botón Interactivo</title>
+  </head>
+  <body>
+    <p id="mensaje">Texto original</p>
+    <button onclick="cambiarTexto()">Haz clic aquí</button>
+
+    <script>
+      function cambiarTexto() {
+        document.getElementById("mensaje").innerHTML = "Texto modificado";
+        document.getElementById("mensaje").style.color = "blue";
+        document.getElementById("mensaje").style.fontSize = "20px";
+      }
+    </script>
+  </body>
+</html>
