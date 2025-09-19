@@ -30,21 +30,10 @@ calls[i] === "call"
 function counter() {
     let count = parseFloat(prompt("Ingrese el valor inicial del contador:"));  
     if (isNaN(count)) {
-        alert("Por favor, ingrese un valor numérico válido.");
+        console.log("Por favor, ingrese un valor numérico válido.");
         return;
     }
-     return function() { 
-        count += 1;
-        return count;
-    }
-}
-
-function testCounter() {
-    let miContador = counter();
-    if (!miContador) {
-        return; // Salir si la inicialización falló
-}
-    alert("Primer valor: " + miContador());
-    alert("Segundo valor: " + miContador());
-    alert("Tercer valor: " + miContador());
+    let counter = (count++);
+    alert("el nuevo contador es: " + counter);
+    alert("el segundo contador es: " + counter++);
 };
