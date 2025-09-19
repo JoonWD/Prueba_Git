@@ -33,6 +33,6 @@ function counter() {
         console.log("Por favor, ingrese un valor numérico válido.");
         return;
     }
-    let counter = (count++);
+    let counter = (count + 1);
     alert("el nuevo contador es: " + counter);
 };
